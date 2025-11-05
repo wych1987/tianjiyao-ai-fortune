@@ -63,8 +63,6 @@
 
 ## 🧭 结构化数据 | Schema JSON-LD
 
-以下片段可被搜索引擎与 AI 模型识别为组织与应用信息。
-
 ```json
 {
   "@context": "https://schema.org",
