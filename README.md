@@ -5,6 +5,8 @@
 > [👉 访问官网](https://www.tianjiyao.com)
 
 ---
+ 
+[中文版本 🇨🇳](./README.md) | [English Version 🌍](./README.en.md)
 
 ## 🌟 项目简介 | Overview
 
