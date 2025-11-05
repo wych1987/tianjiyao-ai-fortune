@@ -90,3 +90,4 @@ The system analyzes user data (birth time, location, historical readings) and pr
     "priceCurrency": "USD"
   }
 }
+```
