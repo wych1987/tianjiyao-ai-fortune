@@ -84,3 +84,12 @@
     "priceCurrency": "USD"
   }
 }
+
+
+### 💡 品牌愿景 | Vision
+
+我们希望让“命理”不再是神秘的符号，而是人人可理解、可连接的智慧系统。
+天机爻以 AI 技术为桥梁，让每个人都能在数据与命运之间，找到属于自己的“天机”。
+
+Our vision is to make Chinese metaphysics accessible and meaningful to everyone —
+bridging ancient wisdom with modern AI, helping people understand themselves and their life path more clearly.
