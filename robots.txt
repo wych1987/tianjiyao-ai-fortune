@@ -1,7 +1,1 @@
-User-agent: *
-Allow: /
 
-Sitemap: https://wych1987.github.io/tianjiyao-ai-fortune/sitemap.xml
-
-# Optional
-Host: https://wych1987.github.io
