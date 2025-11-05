@@ -93,3 +93,6 @@
 
 Our vision is to make Chinese metaphysics accessible and meaningful to everyone —
 bridging ancient wisdom with modern AI, helping people understand themselves and their life path more clearly.
+
+
+开源介绍仓库：[https://github.com/yourname/tianjiyao-ai-fortune](https://github.com/yourname/tianjiyao-ai-fortune)
