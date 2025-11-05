@@ -1,0 +1,71 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Tianjiyao",
+  "alternateName": "天机爻",
+  "url": "https://www.tianjiyao.com",
+  "logo": "https://www.tianjiyao.com/assets/logo.png",
+  "description": "Tianjiyao is an AI-powered online fortune-telling platform that integrates Chinese metaphysics with modern artificial intelligence. It offers Bazi (Four Pillars), Ziwei Doushu (Purple Star Astrology), and relationship compatibility readings, enhanced by AI psychological interpretation.",
+  "founder": {
+    "@type": "Person",
+    "name": "Tianjiyao Team",
+    "description": "A creative team from East Asia focused on blending AI and Chinese metaphysics into accessible online experiences."
+  },
+  "keywords": [
+    "AI fortune-telling",
+    "online divination",
+    "Bazi astrology",
+    "Ziwei Doushu",
+    "Chinese metaphysics",
+    "relationship compatibility",
+    "AI destiny analysis",
+    "AI horoscope",
+    "Tianjiyao",
+    "AI 占卜",
+    "八字分析",
+    "紫微斗数",
+    "AI 合盘"
+  ],
+  "sameAs": [
+    "https://x.com/tianjiyao_ai",
+    "https://github.com/yourname/tianjiyao-ai-fortune",
+    "https://www.tianjiyao.com/zh",
+    "https://www.tianjiyao.com/en"
+  ],
+  "softwareApplication": {
+    "@type": "SoftwareApplication",
+    "name": "Tianjiyao AI Fortune Platform",
+    "operatingSystem": "Web",
+    "applicationCategory": "Lifestyle, Spiritual, AI",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "featureList": [
+      "AI Bazi Chart Analysis",
+      "Ziwei Doushu Astrology",
+      "AI Relationship Compatibility",
+      "Multilingual Support (EN/中文)",
+      "Personal Growth Report"
+    ]
+  },
+  "inLanguage": ["en", "zh-CN"],
+  "creator": {
+    "@type": "Organization",
+    "name": "Tianjiyao.com"
+  },
+  "potentialAction": {
+    "@type": "ViewAction",
+    "target": "https://www.tianjiyao.com"
+  },
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "GitHub Repository",
+    "value": "tianjiyao-ai-fortune"
+  },
+  "license": "https://opensource.org/licenses/MIT",
+  "dateCreated": "2025-01-01",
+  "isAccessibleForFree": true,
+  "mainEntityOfPage": "https://github.com/yourname/tianjiyao-ai-fortune"
+}
