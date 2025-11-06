@@ -1,4 +1,15 @@
+# 天机爻技术文档 - Robots.txt
+# https://docs.tianjiyao.com
+
 User-agent: *
 Allow: /
 
+# 爬虫友好配置
+Crawl-delay: 1
+
+# Sitemap
 Sitemap: https://docs.tianjiyao.com/sitemap.xml
+
+# 主站链接（用于 SEO）
+# 主站: https://www.tianjiyao.com
+# 用户文档: https://wiki.tianjiyao.com

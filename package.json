@@ -1,0 +1,24 @@
+{
+  "name": "tianjiyao-docs",
+  "version": "1.0.0",
+  "description": "天机爻 AI 命理平台技术文档",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "keywords": [
+    "AI占卜",
+    "八字分析",
+    "紫微斗数",
+    "技术文档",
+    "命理AI",
+    "开源项目"
+  ],
+  "author": "Tianjiyao Team",
+  "license": "MIT",
+  "devDependencies": {
+    "vitepress": "^1.0.0"
+  }
+}
