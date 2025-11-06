@@ -19,8 +19,9 @@ export default defineConfig({
   
   // Head 配置 - SEO 优化
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'icon', href: '/favicon.svg' }],
     ['meta', { name: 'theme-color', content: '#5f67ee' }],
+    
     ['meta', { name: 'og:type', content: 'website' }],
     ['meta', { name: 'og:locale', content: 'zh_CN' }],
     ['meta', { name: 'og:site_name', content: '天机爻技术文档' }],
