@@ -436,10 +436,10 @@ export default nextConfig;
 
 - [后端架构](/architecture/backend)
 - [AI 引擎设计](/architecture/ai-engine)
-- [部署方案](/tech-stack/deployment)
+- [数据库设计](/architecture/database)
 
 ---
 
 ::: tip 💡 技术细节
-想了解更多前端实现细节？查看 [Next.js 应用](/tech-stack/nextjs) 或 [GitHub 源代码](https://github.com/wych1987/tianjiyao-ai-fortune)。
+想了解更多前端实现细节？查看 [技术栈](/tech-stack/) 或 [GitHub 源代码](https://github.com/wych1987/tianjiyao-ai-fortune)。
 :::

@@ -7,7 +7,7 @@
 [![GitHub Stars](https://img.shields.io/github/stars/wych1987/tianjiyao-ai-fortune?style=social)](https://github.com/wych1987/tianjiyao-ai-fortune)
 [![GitHub Forks](https://img.shields.io/github/forks/wych1987/tianjiyao-ai-fortune?style=social)](https://github.com/wych1987/tianjiyao-ai-fortune/fork)
 [![Documentation](https://img.shields.io/badge/docs-online-blue)](https://docs.tianjiyao.com)
-[![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/wych1987/tianjiyao-ai-fortune/blob/main/LICENSE)
 
 [🌐 官网](https://www.tianjiyao.com) · [📚 技术文档](https://docs.tianjiyao.com) · [� 用户指南](https://wiki.tianjiyao.com) · [🐛 问题反馈](https://github.com/wych1987/tianjiyao-ai-fortune/issues)
 
@@ -410,7 +410,7 @@ graph LR
 
 ## 📄 许可证 | License
 
-本项目采用 [MIT License](./LICENSE) 开源协议。
+本项目采用 [MIT License](https://github.com/wych1987/tianjiyao-ai-fortune/blob/main/LICENSE) 开源协议。
 
 ```
 MIT License

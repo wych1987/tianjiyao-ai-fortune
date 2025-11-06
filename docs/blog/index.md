@@ -50,7 +50,7 @@
 
 1. [AI 占卜技术实现深度解析](/blog/ai-fortune-telling) - 2.5K 阅读
 2. [八字算法详解](/blog/bazi-algorithm) - 1.8K 阅读
-3. [Next.js 14 SSR 性能优化](/blog/nextjs-performance) - 1.5K 阅读
+3. [SEO 优化策略](/blog/seo-strategy) - 1.5K 阅读
 
 ## 💬 订阅更新
 

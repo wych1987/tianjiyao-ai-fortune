@@ -398,10 +398,10 @@ FOR VALUES FROM ('2025-01-01') TO ('2026-01-01');
 
 ## 下一步
 
-- [Next.js 应用详解](/tech-stack/nextjs)
-- [Azure Functions 实践](/tech-stack/azure-functions)
-- [OpenAI 集成指南](/tech-stack/openai)
-- [部署方案](/tech-stack/deployment)
+- [系统架构](/architecture/)
+- [前端架构](/architecture/frontend)
+- [后端架构](/architecture/backend)
+- [AI 引擎设计](/architecture/ai-engine)
 
 ---
 

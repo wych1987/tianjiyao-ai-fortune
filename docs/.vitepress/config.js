@@ -11,11 +11,14 @@ export default defineConfig({
   // 清理 URL
   cleanUrls: true,
   
+  // 排除文件
+  srcExclude: ['**/README.md', '**/README.en.md'],
+  
   // 最后更新时间
   lastUpdated: true,
   
-  // 忽略死链接（开发阶段）
-  ignoreDeadLinks: true,
+  // 开启死链检查（生产环境）
+  ignoreDeadLinks: false,
   
   // Head 配置 - SEO 优化
   head: [

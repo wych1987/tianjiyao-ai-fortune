@@ -47,8 +47,8 @@ features:
   - icon: ⚡
     title: 高性能
     details: Vercel Edge 部署 + Cloudflare CDN，全球访问延迟 < 100ms
-    link: /tech-stack/deployment
-    linkText: 部署方案
+    link: /tech-stack/
+    linkText: 技术栈
   
   - icon: 🔒
     title: 安全可靠

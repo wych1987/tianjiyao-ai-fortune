@@ -16,7 +16,7 @@
 
 [![Documentation](https://img.shields.io/badge/docs-online-blue)](https://docs.tianjiyao.com)[![Documentation](https://img.shields.io/badge/docs-online-blue)](https://docs.tianjiyao.com)
 
-[![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE)[![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/wych1987/tianjiyao-ai-fortune/blob/main/LICENSE)[![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/wych1987/tianjiyao-ai-fortune/blob/main/LICENSE)
 
 
 
@@ -527,7 +527,7 @@ Found a security issue? Email: security@tianjiyao.com
 
 ## 📄 License
 
-This project is licensed under the [MIT License](./LICENSE).
+This project is licensed under the [MIT License](https://github.com/wych1987/tianjiyao-ai-fortune/blob/main/LICENSE).
 
 ```
 MIT License

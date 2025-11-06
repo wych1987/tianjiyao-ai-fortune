@@ -432,7 +432,7 @@ export function logAIMetrics(data: {
 
 - [后端架构](/architecture/backend)
 - [数据库设计](/architecture/database)
-- [OpenAI 集成详解](/tech-stack/openai)
+- [技术栈详解](/tech-stack/)
 
 ---
 
