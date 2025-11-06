@@ -498,12 +498,33 @@ async function abTest(chart: BaziChart) {
 
 ---
 
-::: tip 💡 相关资源
-- [AI 引擎架构](/architecture/ai-engine)
-- [OpenAI 集成详解](/tech-stack/openai)
-- [Prompt 工程最佳实践](https://platform.openai.com/docs/guides/prompt-engineering)
+---
+
+## 💫 体验天机爻
+
+读完技术实现，想亲自体验 AI 命理分析吗？
+
+::: tip 🎯 免费体验
+👉 **[立即访问天机爻主站](https://www.tianjiyao.com)** 
+
+✨ 功能亮点：
+- 🔮 **八字排盘** - 精准的命理计算
+- 🌟 **AI 深度解读** - GPT-4 驱动的智能分析
+- 💕 **合婚配对** - 多维度关系匹配
+- � **可视化报告** - 清晰易懂的图表展示
 :::
 
-::: info 📬 有问题？
-欢迎在 [GitHub Discussions](https://github.com/wych1987/tianjiyao-ai-fortune/discussions) 讨论交流！
+---
+
+## 相关链接
+
+- [AI 引擎架构](/architecture/ai-engine)
+- [技术栈选型](/tech-stack/)
+- [API 文档](/api/)
+- [更多技术博客](/blog/)
+
+---
+
+::: info 📬 加入讨论
+对技术实现有疑问？欢迎在 [GitHub Discussions](https://github.com/wych1987/tianjiyao-ai-fortune/discussions) 交流！
 :::
