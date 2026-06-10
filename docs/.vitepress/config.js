@@ -1,10 +1,63 @@
 import { defineConfig } from 'vitepress'
 
+const DOCS_SITE_URL = 'https://docs.tianjiyao.com'
+const SITE_DESCRIPTION = '天机爻技术文档，系统整理 AI 命理平台的架构设计、算法实现、API 接入方式与工程实践。'
+
+function buildCanonicalUrl(relativePath) {
+  if (!relativePath || relativePath === 'index.md') {
+    return DOCS_SITE_URL
+  }
+
+  if (relativePath.endsWith('/index.md')) {
+    return `${DOCS_SITE_URL}/${relativePath.replace(/\/index\.md$/, '')}/`
+  }
+
+  return `${DOCS_SITE_URL}/${relativePath.replace(/\.md$/, '')}`
+}
+
+function buildPageSchema({ relativePath, title, description, canonicalUrl }) {
+  const isBlogArticle =
+    relativePath.startsWith('blog/') && !relativePath.endsWith('/index.md')
+
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': isBlogArticle ? 'TechArticle' : 'WebPage',
+    name: title,
+    description,
+    url: canonicalUrl,
+    inLanguage: 'zh-CN',
+    isPartOf: {
+      '@type': 'WebSite',
+      name: '天机爻技术文档',
+      url: DOCS_SITE_URL,
+    },
+  }
+
+  if (isBlogArticle) {
+    schema.headline = title
+    schema.author = {
+      '@type': 'Organization',
+      'name': 'Tianjiyao Team',
+      'url': 'https://www.tianjiyao.com',
+    }
+    schema.publisher = {
+      '@type': 'Organization',
+      name: 'Tianjiyao',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://www.tianjiyao.com/assets/logo.png',
+      },
+    }
+  }
+
+  return schema
+}
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   // 基础配置
   title: '天机爻技术文档',
-  description: 'AI 命理平台架构设计与技术实现 - 天机爻开源项目',
+  description: SITE_DESCRIPTION,
   lang: 'zh-CN',
   base: '/',
   
@@ -25,7 +78,6 @@ export default defineConfig({
     ['link', { rel: 'icon', href: '/favicon.svg' }],
     ['meta', { name: 'theme-color', content: '#5f67ee' }],
     
-    ['meta', { name: 'og:type', content: 'website' }],
     ['meta', { name: 'og:locale', content: 'zh_CN' }],
     ['meta', { name: 'og:site_name', content: '天机爻技术文档' }],
     ['meta', { name: 'og:image', content: 'https://docs.tianjiyao.com/og-image.png' }],
@@ -37,20 +89,14 @@ export default defineConfig({
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:site', content: '@tianjiyao_ai' }],
     
-    // Canonical URL
-    ['link', { rel: 'canonical', href: 'https://docs.tianjiyao.com' }],
-    
-    // 结构化数据
+    // 站点级结构化数据
     ['script', { type: 'application/ld+json' }, JSON.stringify({
       '@context': 'https://schema.org',
-      '@type': 'TechArticle',
-      'headline': '天机爻 AI 命理平台技术文档',
-      'description': 'AI 占卜平台的技术架构、算法实现与开源文档',
-      'author': {
-        '@type': 'Organization',
-        'name': 'Tianjiyao Team',
-        'url': 'https://www.tianjiyao.com'
-      },
+      '@type': 'WebSite',
+      'name': '天机爻技术文档',
+      'description': SITE_DESCRIPTION,
+      'url': DOCS_SITE_URL,
+      'inLanguage': 'zh-CN',
       'publisher': {
         '@type': 'Organization',
         'name': 'Tianjiyao',
@@ -59,15 +105,41 @@ export default defineConfig({
           'url': 'https://www.tianjiyao.com/assets/logo.png'
         }
       },
-      'datePublished': '2025-01-01',
-      'dateModified': new Date().toISOString().split('T')[0],
-      'url': 'https://docs.tianjiyao.com'
+      'potentialAction': {
+        '@type': 'SearchAction',
+        'target': `${DOCS_SITE_URL}/?q={search_term_string}`,
+        'query-input': 'required name=search_term_string'
+      }
     })]
   ],
+
+  transformHead({ pageData, title, description }) {
+    const canonicalUrl = buildCanonicalUrl(pageData.relativePath)
+    const pageDescription =
+      pageData.frontmatter?.description || pageData.description || description
+
+    return [
+      ['link', { rel: 'canonical', href: canonicalUrl }],
+      ['meta', { property: 'og:type', content: pageData.relativePath.startsWith('blog/') && !pageData.relativePath.endsWith('/index.md') ? 'article' : 'website' }],
+      ['meta', { property: 'og:title', content: title }],
+      ['meta', { property: 'og:description', content: pageDescription }],
+      ['meta', { property: 'og:url', content: canonicalUrl }],
+      ['meta', { name: 'twitter:title', content: title }],
+      ['meta', { name: 'twitter:description', content: pageDescription }],
+      ['script', { type: 'application/ld+json' }, JSON.stringify(
+        buildPageSchema({
+          relativePath: pageData.relativePath,
+          title,
+          description: pageDescription,
+          canonicalUrl,
+        })
+      )]
+    ]
+  },
   
   // Sitemap 生成
   sitemap: {
-    hostname: 'https://docs.tianjiyao.com',
+    hostname: DOCS_SITE_URL,
     transformItems(items) {
       return items.map(item => ({
         ...item,

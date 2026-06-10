@@ -1,5 +1,6 @@
 ---
 layout: home
+description: 天机爻技术文档首页，集中查看 AI 命理平台的系统架构、算法实现、API 文档与工程实践，适合开发者快速建立全局认知。
 
 hero:
   name: "天机爻"
